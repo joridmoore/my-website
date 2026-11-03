@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Resume | Jori Moore</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff9fb;
+      color: #44333d;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #f8e5ee;
+      padding: 25px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #743f59;
+    }
+
+    header p {
+      color: #80566b;
+    }
+
+    nav {
+      background-color: #743f59;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 15px;
+      display: inline-block;
+      padding: 5px;
+    }
+
+    nav a:hover,
+    nav a:focus-visible,
+    nav a[aria-current="page"] {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .intro {
+      background-color: #f9e5ef;
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #743f59;
+    }
+
+    .resume-card {
+      background-color: #fcecf3;
+      border-radius: 12px;
+      padding: 25px;
+      margin: 20px 0 30px;
+    }
+
+    .resume-card h3 {
+      color: #743f59;
+      margin-bottom: 5px;
+    }
+
+    .resume-card p {
+      margin-top: 5px;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills-list li {
+      background-color: #f8e5ee;
+      border-radius: 20px;
+      padding: 8px 15px;
+    }
+
+    footer {
+      background-color: #743f59;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        margin: 5px 8px;
+      }
+
+      .intro {
+        padding: 25px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Jori Moore</h1>
+    <p>Communications & Marketing Professional</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="resume.html" aria-current="page">Resume</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+
+    <section class="intro">
+      <h2>My Resume</h2>
+      <p>
+        Explore my professional experience,
+        education, and communication skills.
+      </p>
+    </section>
+
+    <section>
+      <h2>Professional Summary</h2>
+
+      <p>
+        Communications and marketing professional
+        with experience in higher education
+        recruitment, digital marketing, social media,
+        content creation, event coordination,
+        and relationship building.
+
+        Passionate about developing creative
+        marketing strategies, connecting with
+        audiences, and creating meaningful
+        experiences.
+      </p>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+
+      <div class="resume-card">
+        <h3>University of Northern Colorado</h3>
+        <p><strong>Recruiter &amp; Marketer</strong></p>
+
+        <ul>
+          <li>
+            Recruit and guide prospective students
+            through the admissions and enrollment
+            process.
+          </li>
+          <li>
+            Develop personalized marketing campaigns,
+            emails, and outreach strategies.
+          </li>
+          <li>
+            Create engaging social media content
+            and promotional materials for
+            academic programs.
+          </li>
+          <li>
+            Coordinate recruitment events,
+            graduate fairs, and virtual
+            information sessions.
+          </li>
+          <li>
+            Collaborate with faculty and staff
+            to increase program awareness
+            and student interest.
+          </li>
+          <li>
+            Support digital communications
+            and recruitment initiatives
+            for graduate programs.
+          </li>
+        </ul>
+      </div>
+
+      <div class="resume-card">
+        <h3>Metropolitan State University of Denver</h3>
+        <p><strong>Higher Education Admissions</strong></p>
+
+        <ul>
+          <li>
+            Assisted prospective students with
+            admissions questions and next steps.
+          </li>
+          <li>
+            Supported student engagement and
+            recruitment initiatives.
+          </li>
+          <li>
+            Communicated academic opportunities
+            and enrollment information.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+
+      <div class="resume-card">
+        <h3>Metropolitan State University of Denver</h3>
+        <p>
+          Bachelor's Degree in Communications
+          and Marketing
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Skills</h2>
+
+      <ul class="skills-list">
+        <li>Marketing</li>
+        <li>Social Media Management</li>
+        <li>Student Recruitment</li>
+        <li>Event Planning</li>
+        <li>Content Creation</li>
+        <li>Professional Writing</li>
+        <li>Relationship Building</li>
+        <li>Digital Communication</li>
+        <li>Marketing Campaigns</li>
+        <li>Audience Engagement</li>
+      </ul>
+    </section>
+
+    <!-- Add a downloadable resume PDF here later. -->
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jori Moore | Professional Portfolio</p>
+  </footer>
+
+</body>
+</html>
