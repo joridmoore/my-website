@@ -17,23 +17,29 @@
       font-family: Arial, sans-serif;
       background-color: #fff9fb;
       color: #44333d;
-      line-height: 1.6;
+      line-height: 1.7;
     }
+
+    /* HEADER */
 
     header {
       background-color: #f8e5ee;
-      padding: 25px 20px;
+      padding: 35px 20px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
       color: #743f59;
+      font-size: 32px;
     }
 
     header p {
       color: #80566b;
+      margin-bottom: 0;
     }
+
+    /* NAVIGATION */
 
     nav {
       background-color: #743f59;
@@ -56,44 +62,171 @@
       text-decoration: underline;
     }
 
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
+    /* MAIN CONTENT */
 
-    .intro {
-      background-color: #f9e5ef;
-      padding: 30px;
-      border-radius: 15px;
-      text-align: center;
-      margin-bottom: 35px;
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 45px 20px;
     }
 
     h2, h3 {
       color: #743f59;
     }
 
-    .project-card {
-      background-color: #fcecf3;
-      padding: 30px;
-      border-radius: 15px;
-      margin-bottom: 30px;
+    /* INTRODUCTION */
+
+    .intro {
+      background-color: #f9e5ef;
+      border-radius: 20px;
+      padding: 45px 30px;
+      text-align: center;
+      margin-bottom: 45px;
     }
 
-    .project-image {
+    .intro h2 {
+      font-size: 30px;
+      margin-top: 0;
+    }
+
+    .intro p {
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    /* SECTION TITLE */
+
+    .section-heading {
+      text-align: center;
+      margin: 40px 0 25px;
+    }
+
+    .section-heading h2 {
+      font-size: 27px;
+      margin-bottom: 8px;
+    }
+
+    .section-heading p {
+      color: #80566b;
+      margin-top: 0;
+    }
+
+    /* FEATURED PROJECT */
+
+    .featured-project {
+      background-color: white;
+      border: 1px solid #f1d5e2;
+      border-radius: 18px;
+      padding: 30px;
+      box-shadow: 0 6px 22px rgba(116, 63, 89, 0.08);
+      margin-bottom: 50px;
+    }
+
+    .featured-project h3 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .featured-image {
       display: block;
       width: 100%;
+      max-width: 750px;
       height: auto;
-      border: 5px solid #f4c8dc;
+      margin: 25px auto;
+      border: 4px solid #f4c8dc;
       border-radius: 12px;
-      margin: 20px auto;
     }
 
-    .project-card a {
+    .project-details {
+      background-color: #fff4f8;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .project-details p {
+      margin: 10px 0;
+    }
+
+    /* PROJECT GRID */
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      margin-bottom: 45px;
+    }
+
+    .project-card {
+      background-color: white;
+      border: 1px solid #f1d5e2;
+      border-radius: 18px;
+      padding: 30px;
+      box-shadow: 0 6px 22px rgba(116, 63, 89, 0.07);
+    }
+
+    .project-card h3 {
+      font-size: 21px;
+      margin-top: 0;
+    }
+
+    .project-card p {
+      margin-bottom: 15px;
+    }
+
+    .project-number {
+      display: inline-block;
+      background-color: #f8e5ee;
       color: #743f59;
       font-weight: bold;
+      padding: 7px 14px;
+      border-radius: 25px;
+      margin-bottom: 15px;
     }
+
+    .skill-tag {
+      display: inline-block;
+      background-color: #f9e5ef;
+      color: #743f59;
+      border-radius: 20px;
+      padding: 5px 12px;
+      margin: 4px 4px 4px 0;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    /* BUTTONS */
+
+    .button {
+      display: inline-block;
+      background-color: #743f59;
+      color: white;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 9px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      background-color: #572c41;
+    }
+
+    /* CLOSING SECTION */
+
+    .closing {
+      background-color: #f9e5ef;
+      text-align: center;
+      border-radius: 18px;
+      padding: 35px 25px;
+    }
+
+    .closing h2 {
+      margin-top: 0;
+    }
+
+    /* FOOTER */
 
     footer {
       background-color: #743f59;
@@ -102,14 +235,28 @@
       padding: 20px;
     }
 
-    @media (max-width: 600px) {
+    /* MOBILE DESIGN */
+
+    @media (max-width: 700px) {
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .intro {
+        padding: 30px 20px;
+      }
+
+      .featured-project,
+      .project-card {
+        padding: 22px;
+      }
+
       nav a {
         margin: 5px 8px;
       }
 
-      .intro,
-      .project-card {
-        padding: 22px 18px;
+      .intro h2 {
+        font-size: 25px;
       }
     }
   </style>
@@ -132,156 +279,198 @@
 
   <main>
 
+    <!-- INTRODUCTION -->
+
     <section class="intro">
-      <h2>My Creative & Professional Projects</h2>
+      <h2>My Creative Portfolio</h2>
+
       <p>
-        Explore my work in marketing, communications,
-        recruitment, digital content, and event planning.
+        A collection of projects that reflect
+        my passion for marketing, communication,
+        creativity, and bringing people together.
+        Each experience has helped me develop
+        my skills and grow as a professional.
       </p>
     </section>
 
-    <section class="project-card">
-      <h2>Marketing & Communications Portfolio</h2>
+    <!-- FEATURED WORK -->
 
-      <p>
-        This portfolio graphic highlights my
-        professional background, communication
-        skills, and experience in higher
-        education recruitment and marketing.
-      </p>
+    <section aria-labelledby="featured-title">
 
-      <img
-        class="project-image"
-        src="a_polished_marketing_portfolio_resume_infographic.png"
-        alt="Pink marketing portfolio graphic highlighting Jori Moore's professional experience, education, skills, and projects">
+      <div class="section-heading">
+        <h2 id="featured-title">Featured Work</h2>
+        <p>A closer look at my marketing background</p>
+      </div>
 
-      <p>
-        <strong>Purpose:</strong>
-        To present my qualifications and
-        professional experience in a visually
-        engaging and creative format.
-      </p>
+      <div class="featured-project">
+        <h3>Marketing & Communications Portfolio</h3>
 
-      <p>
-        <strong>My Contribution:</strong>
-        I developed the concept, provided
-        the professional content, and selected
-        the visual direction, color palette,
-        and overall presentation to reflect
-        my personal brand and marketing experience.
-      </p>
+        <p>
+          This visual portfolio highlights my
+          experience, education, and professional
+          skills in marketing, recruitment,
+          and communications.
+        </p>
 
-      <p>
-        <strong>Skills Demonstrated:</strong>
-        Personal branding, visual communication,
-        content organization, creative direction,
-        and professional storytelling.
-      </p>
+        <img
+          class="featured-image"
+          src="a_polished_marketing_portfolio_resume_infographic.png"
+          alt="Pink and plum visual portfolio featuring Jori Moore's marketing experience and professional background">
 
-      <p>
+        <div class="project-details">
+          <p>
+            <strong>Project Purpose:</strong>
+            Present my professional background
+            through a cohesive visual design.
+          </p>
+
+          <p>
+            <strong>My Contribution:</strong>
+            I developed the concept, provided
+            the professional content, and selected
+            the color palette and creative direction.
+          </p>
+
+          <p>
+            <strong>Skills Demonstrated:</strong>
+            Personal branding, visual communication,
+            content organization, and storytelling.
+          </p>
+        </div>
+
         <a
+          class="button"
           href="a_polished_marketing_portfolio_resume_infographic.png"
           target="_blank"
           rel="noopener">
-          View Full Portfolio Graphic
+          View Full Graphic
         </a>
-      </p>
+      </div>
+
     </section>
 
-    <section class="project-card">
-      <h2>Graduate Recruitment & Marketing</h2>
+    <!-- OTHER PROJECTS -->
 
-      <p>
-        Through my work in higher education,
-        I have developed outreach strategies
-        and communication materials designed
-        to connect prospective students
-        with academic programs.
-      </p>
+    <section aria-labelledby="other-projects-title">
 
-      <p>
-        My contributions include personalized
-        email campaigns, student outreach,
-        recruitment events, and collaboration
-        with faculty and staff.
-      </p>
+      <div class="section-heading">
+        <h2 id="other-projects-title">Explore My Projects</h2>
+        <p>Professional experience meets creativity</p>
+      </div>
 
-      <p>
-        <strong>Skills Demonstrated:</strong>
-        Strategic communication, recruitment
-        marketing, audience engagement,
-        and relationship building.
-      </p>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <span class="project-number">Project 01</span>
+
+          <h3>Recruitment & Marketing</h3>
+
+          <p>
+            Developed outreach strategies,
+            personalized communication campaigns,
+            and recruitment materials to connect
+            prospective students with graduate
+            programs.
+          </p>
+
+          <p>
+            Collaborated with university faculty
+            and staff to support student engagement
+            and program awareness.
+          </p>
+
+          <span class="skill-tag">Marketing</span>
+          <span class="skill-tag">Recruitment</span>
+          <span class="skill-tag">Communication</span>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">Project 02</span>
+
+          <h3>Social Media & Content Creation</h3>
+
+          <p>
+            Created promotional messaging and
+            digital content to communicate
+            program information and engage
+            prospective students.
+          </p>
+
+          <p>
+            Focused on clear storytelling,
+            audience connection, and
+            consistent messaging.
+          </p>
+
+          <span class="skill-tag">Social Media</span>
+          <span class="skill-tag">Content Creation</span>
+          <span class="skill-tag">Digital Marketing</span>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">Project 03</span>
+
+          <h3>Creative Event Planning</h3>
+
+          <p>
+            Helped plan bachelorette celebrations
+            in Las Vegas and Nashville, including
+            a scavenger hunt, themed wig night,
+            and group activities.
+          </p>
+
+          <p>
+            Organized creative experiences
+            designed to bring people together
+            and create lasting memories.
+          </p>
+
+          <span class="skill-tag">Event Planning</span>
+          <span class="skill-tag">Creativity</span>
+          <span class="skill-tag">Organization</span>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">Project 04</span>
+
+          <h3>Website Design & Development</h3>
+
+          <p>
+            Designed and developed this
+            professional portfolio using
+            HTML and CSS as part of
+            my web design coursework.
+          </p>
+
+          <p>
+            Created five connected pages
+            with responsive layouts,
+            accessible navigation, and
+            consistent personal branding.
+          </p>
+
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">Web Design</span>
+        </article>
+
+      </div>
     </section>
 
-    <section class="project-card">
-      <h2>Social Media & Digital Content</h2>
+    <!-- CLOSING -->
+
+    <section class="closing">
+      <h2>Let's Connect!</h2>
 
       <p>
-        I enjoy developing creative digital
-        content that helps organizations
-        communicate clearly and build
-        connections with their audiences.
+        Interested in learning more about
+        my experience or collaborating
+        on a creative project?
       </p>
 
-      <p>
-        My experience includes promotional
-        messaging, digital storytelling,
-        social media content, and communicating
-        program information.
-      </p>
-
-      <p>
-        <strong>Skills Demonstrated:</strong>
-        Content creation, social media strategy,
-        writing, and digital marketing.
-      </p>
-    </section>
-
-    <section class="project-card">
-      <h2>Creative Event Planning</h2>
-
-      <p>
-        I have helped plan memorable bachelorette
-        celebrations, including a Las Vegas
-        scavenger hunt and Nashville activities
-        featuring a themed wig night and
-        tubing experience.
-      </p>
-
-      <p>
-        These experiences allowed me to bring
-        creative ideas to life while organizing
-        activities and coordinating group experiences.
-      </p>
-
-      <p>
-        <strong>Skills Demonstrated:</strong>
-        Event planning, creativity, organization,
-        and group coordination.
-      </p>
-    </section>
-
-    <section class="project-card">
-      <h2>Website Design & Development</h2>
-
-      <p>
-        I created this professional portfolio
-        using HTML and CSS as part of my
-        web design coursework.
-      </p>
-
-      <p>
-        The website features responsive layouts,
-        accessible navigation, and consistent
-        personal branding across five pages.
-      </p>
-
-      <p>
-        <strong>Skills Demonstrated:</strong>
-        HTML, CSS, web accessibility,
-        responsive design, and GitHub Pages.
-      </p>
+      <a class="button" href="contact.html">
+        Contact Me
+      </a>
     </section>
 
   </main>
