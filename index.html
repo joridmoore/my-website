@@ -4,9 +4,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="Professional portfolio of Jori Moore,
+        featuring communications, marketing,
+        recruitment, and creative projects.">
 
-  <title>Jori Moore | Communications & Marketing Portfolio</title>
+  <title>Home | Jori Moore</title>
 
   <style>
     * {
@@ -16,50 +21,54 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #fff9fb;
+      background: #fff9fb;
       color: #44333d;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     header {
-      background-color: #f8e5ee;
-      padding: 25px 20px;
+      background: #f8e5ee;
       text-align: center;
+      padding: 35px 20px;
     }
 
     header h1 {
-      margin: 0;
       color: #743f59;
-      font-size: 2rem;
+      font-size: 34px;
+      margin: 0;
     }
 
     header p {
-      margin: 5px 0 0;
       color: #80566b;
+      margin: 5px 0 0;
     }
 
     nav {
-      background-color: #743f59;
-      padding: 15px;
+      background: #743f59;
       text-align: center;
+      padding: 12px;
     }
 
     nav a {
+      display: inline-block;
       color: white;
       text-decoration: none;
       font-weight: bold;
-      margin: 0 15px;
-      display: inline-block;
-      padding: 5px;
+      padding: 8px 12px;
+      margin: 3px;
+      border-radius: 6px;
     }
 
     nav a:hover,
-    nav a:focus-visible {
+    nav a:focus-visible,
+    nav a[aria-current="page"] {
+      background: #572c41;
       text-decoration: underline;
     }
 
-    nav a[aria-current="page"] {
-      text-decoration: underline;
+    a:focus-visible {
+      outline: 3px solid #bd638b;
+      outline-offset: 3px;
     }
 
     main {
@@ -68,90 +77,113 @@
       padding: 40px 20px;
     }
 
+    h2, h3 {
+      color: #743f59;
+    }
+
     .hero {
-      background-color: #f9e5ef;
-      border-radius: 15px;
-      padding: 45px 30px;
+      background: #f9e5ef;
+      border-radius: 18px;
       text-align: center;
+      padding: 50px 30px;
+      margin-bottom: 35px;
     }
 
     .hero h2 {
-      color: #743f59;
-      font-size: 2.5rem;
+      font-size: 30px;
       margin-top: 0;
     }
 
     .hero p {
-      max-width: 650px;
-      margin: 0 auto 25px;
+      max-width: 680px;
+      margin: 0 auto 20px;
     }
 
     .button {
       display: inline-block;
-      background-color: #743f59;
+      background: #743f59;
       color: white;
-      padding: 12px 25px;
-      border-radius: 8px;
       text-decoration: none;
+      padding: 12px 24px;
+      margin: 8px;
+      border-radius: 8px;
       font-weight: bold;
     }
 
     .button:hover,
     .button:focus-visible {
-      background-color: #572c41;
+      background: #572c41;
     }
 
-    .skills {
-      margin-top: 45px;
+    .section-title {
       text-align: center;
+      margin: 35px 0 25px;
     }
 
-    .skills h2 {
-      color: #743f59;
-    }
-
-    .skill-grid {
+    .card-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
       gap: 20px;
-      margin-top: 25px;
     }
 
-    .skill-card {
-      background-color: #fcecf3;
-      border: 1px solid #edd1df;
-      border-radius: 12px;
+    .card {
+      background: white;
+      border: 1px solid #efd3e0;
+      border-radius: 16px;
       padding: 25px;
+      box-shadow: 0 5px 18px
+        rgba(116, 63, 89, 0.07);
     }
 
-    .skill-card h3 {
-      color: #743f59;
+    .card h3 {
       margin-top: 0;
     }
 
-    footer {
-      background-color: #743f59;
-      color: white;
+    .card a {
+      color: #743f59;
+      font-weight: bold;
+    }
+
+    .highlight {
+      background: #fff1f7;
+      padding: 35px 25px;
+      border-radius: 18px;
       text-align: center;
-      padding: 20px;
       margin-top: 40px;
     }
 
-    @media (max-width: 600px) {
-      nav a {
-        margin: 5px 8px;
-      }
+    footer {
+      background: #743f59;
+      color: white;
+      text-align: center;
+      padding: 25px 20px;
+    }
 
-      .skill-grid {
+    footer a {
+      color: white;
+    }
+
+    footer a:hover,
+    footer a:focus-visible {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      .card-grid {
         grid-template-columns: 1fr;
       }
 
       .hero {
-        padding: 30px 20px;
+        padding: 35px 20px;
       }
 
       .hero h2 {
-        font-size: 2rem;
+        font-size: 25px;
+      }
+
+      main {
+        padding: 25px 15px;
       }
     }
   </style>
@@ -165,7 +197,8 @@
   </header>
 
   <nav aria-label="Main navigation">
-    <a href="index.html" aria-current="page">Home</a>
+    <a href="index.html"
+       aria-current="page">Home</a>
     <a href="about.html">About</a>
     <a href="resume.html">Resume</a>
     <a href="projects.html">Projects</a>
@@ -175,70 +208,118 @@
   <main>
 
     <section class="hero">
-      <h2>Hi, I'm Jori!</h2>
+      <h2>Welcome to My Professional Portfolio!</h2>
 
       <p>
-        Welcome to my professional portfolio!
-        I'm passionate about communications, marketing,
-        creative storytelling, and building meaningful
-        connections with people.
+        Hi, I'm Jori! I'm a communications
+        and marketing professional passionate
+        about building meaningful relationships,
+        creating engaging content, and
+        connecting people with opportunities.
       </p>
 
       <p>
-        Through my professional experience, I've developed
-        skills in social media, recruitment, event planning,
-        content creation, and relationship building.
+        Explore my experience in higher education
+        recruitment, marketing, communications,
+        and creative event planning.
       </p>
+
+      <a class="button" href="about.html">
+        Get to Know Me
+      </a>
 
       <a class="button" href="projects.html">
         Explore My Work
       </a>
     </section>
 
-    <section class="skills">
-      <h2>What I Bring to the Table</h2>
+    <section aria-labelledby="explore-title">
 
-      <div class="skill-grid">
+      <h2 class="section-title" id="explore-title">
+        Explore My Portfolio
+      </h2>
 
-        <div class="skill-card">
-          <h3>Marketing & Social Media</h3>
+      <div class="card-grid">
+
+        <article class="card">
+          <h3>About Me</h3>
           <p>
-            Creating engaging content, connecting with
-            audiences, and supporting marketing campaigns.
+            Learn about my background,
+            professional values, education,
+            and the experiences that
+            have shaped my career.
           </p>
-        </div>
+          <a href="about.html">Read More</a>
+        </article>
 
-        <div class="skill-card">
-          <h3>Communication</h3>
+        <article class="card">
+          <h3>My Resume</h3>
           <p>
-            Building relationships through clear,
-            thoughtful, and effective communication.
+            Explore my professional experience,
+            education, skills, certifications,
+            and accomplishments.
           </p>
-        </div>
+          <a href="resume.html">View Resume</a>
+        </article>
 
-        <div class="skill-card">
-          <h3>Event Planning</h3>
+        <article class="card">
+          <h3>Featured Projects</h3>
           <p>
-            Organizing events, coordinating details,
-            and creating memorable experiences.
+            Discover projects involving
+            recruitment campaigns,
+            digital content, event planning,
+            and website development.
           </p>
-        </div>
+          <a href="projects.html">View Projects</a>
+        </article>
 
-        <div class="skill-card">
-          <h3>Content Creation</h3>
+        <article class="card">
+          <h3>Contact Me</h3>
           <p>
-            Developing creative written and digital
-            content that tells meaningful stories.
+            Interested in connecting,
+            collaborating, or learning more
+            about my professional experience?
           </p>
-        </div>
+          <a href="contact.html">Get in Touch</a>
+        </article>
 
       </div>
+
+    </section>
+
+    <section class="highlight">
+      <h2>My Professional Passion</h2>
+
+      <p>
+        I believe effective communication
+        creates meaningful connections.
+        Whether I'm helping prospective
+        students navigate their educational
+        journeys, developing marketing
+        content, or planning an event,
+        I enjoy bringing people and ideas
+        together.
+      </p>
+
+      <a class="button" href="contact.html">
+        Let's Connect!
+      </a>
     </section>
 
   </main>
 
   <footer>
-    <p>&copy; 2026 Jori Moore | Professional Portfolio</p>
+    <p>
+      Contact Me:
+      <a href="mailto:jori.d.moore@gmail.com">
+        jori.d.moore@gmail.com
+      </a>
+    </p>
+
+    <p>
+      &copy; 2026 Jori Moore |
+      Professional Portfolio
+    </p>
   </footer>
 
 </body>
