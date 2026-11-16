@@ -4,7 +4,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Contact Jori Moore, a communications
+        and marketing professional.">
 
   <title>Contact | Jori Moore</title>
 
@@ -18,94 +23,206 @@
       font-family: Arial, sans-serif;
       background-color: #fff9fb;
       color: #44333d;
-      line-height: 1.6;
+      line-height: 1.7;
     }
+
+    /* HEADER */
 
     header {
       background-color: #f8e5ee;
-      padding: 25px 20px;
+      padding: 30px 20px;
       text-align: center;
     }
 
     header h1 {
-      margin: 0;
       color: #743f59;
+      margin: 0;
+      font-size: 32px;
     }
 
     header p {
       color: #80566b;
+      margin: 5px 0 0;
     }
+
+    /* NAVIGATION */
 
     nav {
       background-color: #743f59;
-      padding: 15px;
+      padding: 12px;
       text-align: center;
     }
 
     nav a {
+      display: inline-block;
       color: white;
       text-decoration: none;
       font-weight: bold;
-      margin: 0 15px;
-      display: inline-block;
-      padding: 5px;
+      padding: 8px 12px;
+      margin: 3px;
+      border-radius: 6px;
     }
 
     nav a:hover,
     nav a:focus-visible,
     nav a[aria-current="page"] {
+      background-color: #572c41;
       text-decoration: underline;
     }
 
+    a:focus-visible {
+      outline: 3px solid #bd638b;
+      outline-offset: 3px;
+    }
+
+    /* MAIN CONTENT */
+
     main {
-      max-width: 850px;
+      max-width: 1000px;
       margin: auto;
       padding: 40px 20px;
     }
 
-    .intro {
-      background-color: #f9e5ef;
-      border-radius: 15px;
-      padding: 40px 25px;
-      text-align: center;
+    h2, h3 {
+      color: #743f59;
     }
 
-    h2 {
-      color: #743f59;
+    /* INTRO */
+
+    .intro {
+      background-color: #f9e5ef;
+      border-radius: 18px;
+      padding: 45px 25px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .intro h2 {
+      font-size: 30px;
+      margin: 0 0 15px;
+    }
+
+    .intro p {
+      max-width: 650px;
+      margin: auto;
+    }
+
+    /* CONTACT CARDS */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+      gap: 25px;
+      margin-bottom: 40px;
     }
 
     .contact-card {
-      background-color: #fcecf3;
-      border-radius: 12px;
-      padding: 30px;
-      margin-top: 30px;
+      background-color: white;
+      border: 1px solid #efd3e0;
+      border-radius: 18px;
+      padding: 35px 25px;
+      text-align: center;
+      box-shadow: 0 5px 18px
+        rgba(116, 63, 89, 0.08);
     }
 
-    .contact-card a {
-      color: #743f59;
+    .contact-card h3 {
+      font-size: 23px;
+      margin: 10px 0;
+    }
+
+    .contact-card p {
+      margin-bottom: 20px;
+    }
+
+    .contact-icon {
+      font-size: 38px;
+      line-height: 1.4;
+    }
+
+    /* BUTTONS */
+
+    .button {
+      display: inline-block;
+      background-color: #743f59;
+      color: white;
+      text-decoration: none;
       font-weight: bold;
+      padding: 12px 24px;
+      border-radius: 8px;
+      margin-top: 10px;
+      overflow-wrap: anywhere;
     }
 
-    .contact-card a:hover,
-    .contact-card a:focus-visible {
-      text-decoration-thickness: 2px;
+    .button:hover,
+    .button:focus-visible {
+      background-color: #572c41;
+      color: white;
     }
+
+    /* ADDITIONAL INFORMATION */
+
+    .highlight {
+      background-color: #fff1f7;
+      border-radius: 18px;
+      padding: 35px 25px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .highlight h2 {
+      margin-top: 0;
+    }
+
+    .highlight p {
+      max-width: 650px;
+      margin: auto;
+    }
+
+    /* CLOSING */
+
+    .closing {
+      background-color: #f9e5ef;
+      border-radius: 18px;
+      padding: 35px 25px;
+      text-align: center;
+    }
+
+    .closing h2 {
+      margin-top: 0;
+    }
+
+    /* FOOTER */
 
     footer {
       background-color: #743f59;
       color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
     }
 
-    @media (max-width: 600px) {
-      nav a {
-        margin: 5px 8px;
+    /* MOBILE DESIGN */
+
+    @media (max-width: 700px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
       }
 
       .intro {
+        padding: 30px 20px;
+      }
+
+      .intro h2 {
+        font-size: 25px;
+      }
+
+      .contact-card {
         padding: 25px 20px;
+      }
+
+      main {
+        padding: 25px 15px;
       }
     }
   </style>
@@ -123,64 +240,142 @@
     <a href="about.html">About</a>
     <a href="resume.html">Resume</a>
     <a href="projects.html">Projects</a>
-    <a href="contact.html" aria-current="page">Contact</a>
+    <a href="contact.html"
+       aria-current="page">Contact</a>
   </nav>
 
   <main>
+
+    <!-- INTRODUCTION -->
 
     <section class="intro">
       <h2>Let's Connect!</h2>
 
       <p>
         Thank you for visiting my professional
-        portfolio! I love connecting with people,
-        sharing creative ideas, and exploring
-        new opportunities.
-      </p>
-
-      <p>
-        Whether you're interested in collaborating,
-        discussing a professional opportunity,
-        or learning more about my work,
-        I'd love to hear from you!
+        portfolio! I love connecting with
+        people, exchanging creative ideas,
+        and exploring opportunities in
+        communications, marketing,
+        digital media, and event planning.
       </p>
     </section>
 
-    <section class="contact-card">
-      <h2>Get in Touch</h2>
+    <!-- CONTACT OPTIONS -->
 
-      <p><strong>Name:</strong> Jori Moore</p>
+    <section aria-labelledby="contact-title">
+
+      <h2 id="contact-title"
+          style="text-align: center;">
+        Get in Touch
+      </h2>
+
+      <div class="contact-grid">
+
+        <!-- EMAIL -->
+
+        <article class="contact-card">
+
+          <div class="contact-icon"
+               aria-hidden="true">
+            💌
+          </div>
+
+          <h3>Email Me</h3>
+
+          <p>
+            Have a question, collaboration
+            idea, or professional opportunity?
+            I'd love to hear from you!
+          </p>
+
+          <a class="button"
+             href="mailto:jori.d.moore@gmail.com">
+            Send Me an Email
+          </a>
+
+          <p>
+            <a href="mailto:jori.d.moore@gmail.com">
+              jori.d.moore@gmail.com
+            </a>
+          </p>
+
+        </article>
+
+        <!-- LINKEDIN -->
+
+        <article class="contact-card">
+
+          <div class="contact-icon"
+               aria-hidden="true">
+            💼
+          </div>
+
+          <h3>Connect on LinkedIn</h3>
+
+          <p>
+            Explore my professional background,
+            connect with me, and stay updated
+            on my career journey.
+          </p>
+
+          <a class="button"
+             href="https://www.linkedin.com/in/jori-moore-649618194"
+             target="_blank"
+             rel="noopener noreferrer">
+            View My LinkedIn
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- PROFESSIONAL INTERESTS -->
+
+    <section class="highlight">
+
+      <h2>I'm Always Open to New Connections!</h2>
 
       <p>
-        <strong>Email:</strong>
-        <a href="mailto:jori.d.moore@gmail.com">
-          jori.d.moore@gmail.com
-        </a>
+        I'm especially interested in opportunities
+        involving marketing, communications,
+        social media, creative content development,
+        recruitment, event planning, and
+        community engagement.
       </p>
 
-      <p>
-        <strong>LinkedIn:</strong>
-        <a
-          href="https://www.linkedin.com/in/jori-moore-649618194"
-          target="_blank"
-          rel="noopener noreferrer">
-          Connect with me on LinkedIn
-        </a>
-      </p>
+    </section>
+
+    <!-- CLOSING -->
+
+    <section class="closing">
+
+      <h2>Explore More of My Work</h2>
 
       <p>
-        I'm always excited to connect with
-        professionals, creative thinkers,
-        and organizations looking for
-        someone passionate about
-        communications and marketing.
+        Want to learn more about my
+        experience and creative projects?
       </p>
+
+      <a class="button" href="resume.html">
+        View My Resume
+      </a>
+
+      <a class="button" href="projects.html">
+        Explore My Projects
+      </a>
+
     </section>
 
   </main>
 
   <footer>
-    <p>&copy; 2026 Jori Moore | Professional Portfolio</p>
+    <p>
+      &copy; 2026 Jori Moore |
+      Professional Portfolio
+    </p>
   </footer>
 
 </body>
