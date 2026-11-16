@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,9 +6,8 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
   <meta name="description"
-        content="Learn about Jori Moore, a communications
-        and marketing professional with experience
-        in higher education recruitment.">
+        content="Learn about Jori Moore, her background,
+        values, education, and professional skills.">
 
   <title>About Me | Jori Moore</title>
 
@@ -21,15 +19,15 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #fff9fb;
+      background: #fff9fb;
       color: #44333d;
       line-height: 1.7;
     }
 
     header {
-      background-color: #f8e5ee;
-      padding: 30px 20px;
+      background: #f8e5ee;
       text-align: center;
+      padding: 30px 20px;
     }
 
     header h1 {
@@ -44,9 +42,9 @@
     }
 
     nav {
-      background-color: #743f59;
-      padding: 12px;
+      background: #743f59;
       text-align: center;
+      padding: 12px;
     }
 
     nav a {
@@ -62,7 +60,7 @@
     nav a:hover,
     nav a:focus-visible,
     nav a[aria-current="page"] {
-      background-color: #572c41;
+      background: #572c41;
       text-decoration: underline;
     }
 
@@ -72,7 +70,7 @@
     }
 
     main {
-      max-width: 1100px;
+      max-width: 1000px;
       margin: auto;
       padding: 40px 20px;
     }
@@ -82,7 +80,7 @@
     }
 
     .intro {
-      background-color: #f9e5ef;
+      background: #f9e5ef;
       border-radius: 18px;
       padding: 40px 25px;
       text-align: center;
@@ -102,9 +100,8 @@
     .about-grid {
       display: grid;
       grid-template-columns: 300px 1fr;
-      gap: 35px;
-      align-items: center;
-      margin-bottom: 40px;
+      gap: 30px;
+      align-items: start;
     }
 
     .headshot {
@@ -112,64 +109,53 @@
       height: auto;
       border-radius: 18px;
       border: 5px solid #f4c8dc;
-      box-shadow: 0 5px 18px
-        rgba(116, 63, 89, 0.12);
-    }
-
-    .about-text h2 {
-      font-size: 27px;
-      margin-top: 0;
-    }
-
-    .section-heading {
-      text-align: center;
-      margin: 35px 0 22px;
-    }
-
-    .card-grid {
-      display: grid;
-      grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-      gap: 22px;
-      margin-bottom: 40px;
+      display: block;
     }
 
     .card {
-      background-color: white;
+      background: white;
       border: 1px solid #efd3e0;
       border-radius: 16px;
       padding: 25px;
+      margin-bottom: 20px;
       box-shadow: 0 5px 18px
         rgba(116, 63, 89, 0.07);
     }
 
+    .card h2,
     .card h3 {
       margin-top: 0;
     }
 
-    .card ul {
-      padding-left: 22px;
+    .section-title {
+      border-bottom: 3px solid #f4c8dc;
+      padding-bottom: 10px;
+      margin: 35px 0 22px;
     }
 
-    .card li {
-      margin-bottom: 8px;
+    .values-grid {
+      display: grid;
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .values-grid .card {
+      margin-bottom: 0;
     }
 
     .highlight {
-      background-color: #fff1f7;
+      background: #fff1f7;
+      padding: 30px;
       border-radius: 16px;
-      padding: 28px;
-      margin-bottom: 35px;
-    }
-
-    .highlight h2 {
-      margin-top: 0;
+      margin-top: 30px;
     }
 
     .skill-tag {
       display: inline-block;
-      background-color: #f8e5ee;
+      background: #f8e5ee;
       color: #743f59;
+      border: 1px solid #e6b8cf;
       padding: 7px 13px;
       border-radius: 20px;
       font-size: 14px;
@@ -178,53 +164,57 @@
     }
 
     .closing {
-      background-color: #f9e5ef;
-      text-align: center;
+      background: #f9e5ef;
       border-radius: 18px;
       padding: 35px 25px;
-    }
-
-    .closing h2 {
-      margin-top: 0;
+      text-align: center;
+      margin-top: 40px;
     }
 
     .button {
       display: inline-block;
-      background-color: #743f59;
+      background: #743f59;
       color: white;
-      padding: 12px 24px;
       text-decoration: none;
       font-weight: bold;
+      padding: 12px 24px;
       border-radius: 8px;
       margin: 8px;
     }
 
     .button:hover,
     .button:focus-visible {
-      background-color: #572c41;
-      color: white;
+      background: #572c41;
     }
 
     footer {
-      background-color: #743f59;
+      background: #743f59;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 25px 20px;
+    }
+
+    footer a {
+      color: white;
+    }
+
+    footer a:hover,
+    footer a:focus-visible {
+      text-decoration: underline;
     }
 
     @media (max-width: 700px) {
       .about-grid,
-      .card-grid {
+      .values-grid {
         grid-template-columns: 1fr;
       }
 
       .about-grid {
-        gap: 22px;
+        gap: 20px;
       }
 
       .headshot {
         max-width: 320px;
-        display: block;
         margin: auto;
       }
 
@@ -232,8 +222,8 @@
         font-size: 25px;
       }
 
-      .card {
-        padding: 20px;
+      main {
+        padding: 25px 15px;
       }
     }
   </style>
@@ -257,210 +247,240 @@
 
   <main>
 
-    <!-- INTRODUCTION -->
-
     <section class="intro">
       <h2>Get to Know Me!</h2>
 
       <p>
-        I'm a communications and marketing
-        professional who loves creativity,
-        collaboration, and connecting with people.
-        I believe meaningful communication can
-        inspire action, build relationships,
-        and create opportunities.
+        I'm passionate about communication,
+        creativity, and building meaningful
+        connections. Here's a little more
+        about my professional journey
+        and what inspires me.
       </p>
     </section>
 
-    <!-- ABOUT ME -->
-
     <section class="about-grid"
-             aria-labelledby="about-title">
+             aria-label="Introduction and background">
 
       <div>
-        <img
-          class="headshot"
-          src="IMG_6416.JPG"
-          alt="Professional headshot of Jori Moore">
+        <img class="headshot"
+             src="IMG_6416.JPG"
+             alt="Professional headshot of Jori Moore">
       </div>
 
-      <div class="about-text">
-        <h2 id="about-title">Hi, I'm Jori!</h2>
+      <div class="card">
+        <h2>Hi, I'm Jori!</h2>
 
         <p>
-          I'm a passionate and outgoing
-          communications professional with
-          experience in higher education,
-          student recruitment, marketing,
-          and event planning.
+          I'm a communications and marketing
+          professional with experience in
+          higher education recruitment,
+          admissions, student engagement,
+          and relationship building.
         </p>
 
         <p>
-          Through my work in university
-          admissions and enrollment, I've
-          developed a passion for helping
-          people discover opportunities
-          and achieve their goals.
+          I enjoy working with people,
+          creating engaging communications,
+          and helping individuals connect
+          with opportunities that support
+          their goals.
         </p>
 
         <p>
-          I enjoy developing creative
-          communication strategies,
-          organizing events, creating
-          engaging content, and working
-          with teams to bring ideas to life.
+          Through my professional experience,
+          I've developed skills in outreach
+          campaigns, event planning,
+          collaboration, and strategic
+          communication.
         </p>
 
         <p>
-          My goal is to continue growing
-          professionally while exploring
-          opportunities in marketing,
-          digital media, communications,
-          and creative event planning.
+          I'm especially passionate about
+          creativity, storytelling,
+          digital media, and finding
+          new ways to connect with audiences.
         </p>
       </div>
 
     </section>
-
-    <!-- STRENGTHS AND VALUES -->
 
     <section aria-labelledby="strengths-title">
 
-      <div class="section-heading">
-        <h2 id="strengths-title">
-          What I Bring to the Table
-        </h2>
-        <p>
-          My strengths, values, and professional approach
-        </p>
+      <h2 class="section-title" id="strengths-title">
+        My Professional Strengths
+      </h2>
+
+      <div class="card">
+        <ul>
+          <li>
+            Building meaningful relationships
+            through communication and collaboration.
+          </li>
+          <li>
+            Developing personalized outreach
+            and engagement strategies.
+          </li>
+          <li>
+            Creating engaging professional
+            content and messaging.
+          </li>
+          <li>
+            Coordinating recruitment events,
+            campaigns, and information sessions.
+          </li>
+          <li>
+            Staying organized while managing
+            multiple responsibilities and deadlines.
+          </li>
+        </ul>
       </div>
 
-      <div class="card-grid">
-
-        <article class="card">
-          <h3>My Core Strengths</h3>
-
-          <ul>
-            <li>Communication and relationship building</li>
-            <li>Creative marketing and content development</li>
-            <li>Event planning and organization</li>
-            <li>Teamwork and collaboration</li>
-            <li>Problem-solving and adaptability</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>My Professional Values</h3>
-
-          <ul>
-            <li>Building genuine connections</li>
-            <li>Communicating with empathy and clarity</li>
-            <li>Supporting others in achieving their goals</li>
-            <li>Bringing positivity and creativity to teams</li>
-            <li>Continuously learning and improving</li>
-          </ul>
-        </article>
-
-      </div>
     </section>
 
-    <!-- EDUCATION -->
+    <section aria-labelledby="values-title">
 
-    <section class="highlight"
-             aria-labelledby="education-title">
+      <h2 class="section-title" id="values-title">
+        What I Value
+      </h2>
 
-      <h2 id="education-title">
+      <div class="values-grid">
+
+        <article class="card">
+          <h3>Meaningful Connections</h3>
+          <p>
+            I believe strong relationships
+            are built through authentic
+            communication, empathy,
+            and genuine interest in others.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Creativity & Growth</h3>
+          <p>
+            I enjoy exploring new ideas,
+            learning new skills, and
+            approaching challenges
+            with creativity and curiosity.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+    <section aria-labelledby="education-title">
+
+      <h2 class="section-title" id="education-title">
         Education & Professional Growth
       </h2>
 
-      <p>
-        I earned my bachelor's degree in
-        Communications and Marketing from
-        Metropolitan State University of Denver.
-      </p>
+      <div class="card">
+        <p>
+          I earned my Bachelor of Arts in
+          Communication Studies from
+          Metropolitan State University
+          of Denver, where I concentrated
+          in Rhetoric and Social Justice
+          and minored in Political Science.
+        </p>
 
-      <p>
-        I'm continuing my education through
-        graduate studies in communication
-        at Colorado State University,
-        where I'm expanding my knowledge
-        of digital communication and web design.
-      </p>
+        <p>
+          I'm currently pursuing a
+          Master of Arts in Communication
+          Studies at Colorado State University.
+        </p>
 
-      <p>
-        I believe professional growth is
-        an ongoing journey, and I enjoy
-        learning new skills that help me
-        become a stronger communicator
-        and creative professional.
-      </p>
-
-    </section>
-
-    <!-- SKILLS -->
-
-    <section aria-labelledby="skills-title">
-
-      <div class="section-heading">
-        <h2 id="skills-title">
-          My Skills & Interests
-        </h2>
+        <p>
+          My education and professional
+          experiences continue to strengthen
+          my interests in communications,
+          marketing, and digital media.
+        </p>
       </div>
 
-      <div class="highlight">
-
-        <span class="skill-tag">Marketing</span>
-        <span class="skill-tag">Public Relations</span>
-        <span class="skill-tag">Student Recruitment</span>
-        <span class="skill-tag">Social Media</span>
-        <span class="skill-tag">Content Creation</span>
-        <span class="skill-tag">Event Planning</span>
-        <span class="skill-tag">Digital Communication</span>
-        <span class="skill-tag">HTML & CSS</span>
-        <span class="skill-tag">Relationship Building</span>
-        <span class="skill-tag">Creative Strategy</span>
-
-      </div>
     </section>
-
-    <!-- PERSONAL TOUCH -->
 
     <section class="highlight"
-             aria-labelledby="personal-title">
+             aria-labelledby="skills-title">
 
-      <h2 id="personal-title">
+      <h2 id="skills-title">
+        Skills & Interests
+      </h2>
+
+      <span class="skill-tag">
+        Marketing
+      </span>
+
+      <span class="skill-tag">
+        Communication
+      </span>
+
+      <span class="skill-tag">
+        Social Media
+      </span>
+
+      <span class="skill-tag">
+        Content Creation
+      </span>
+
+      <span class="skill-tag">
+        Event Planning
+      </span>
+
+      <span class="skill-tag">
+        Student Recruitment
+      </span>
+
+      <span class="skill-tag">
+        Relationship Building
+      </span>
+
+      <span class="skill-tag">
+        Digital Media
+      </span>
+
+      <span class="skill-tag">
+        Website Design
+      </span>
+
+    </section>
+
+    <section aria-labelledby="personal-title">
+
+      <h2 class="section-title" id="personal-title">
         Beyond the Professional World
       </h2>
 
-      <p>
-        Outside of work, I enjoy staying
-        active, playing volleyball,
-        exploring Colorado, and spending
-        time with friends and family.
-        I also love sports, creative
-        projects, and planning fun events.
-      </p>
+      <div class="card">
+        <p>
+          Outside of work, I enjoy
+          staying active, playing volleyball,
+          exploring Colorado, and spending
+          time with friends and family.
+          I also love creative projects,
+          sports, and planning memorable
+          events and experiences.
+        </p>
 
-      <p>
-        Whether I'm collaborating on a
-        professional project or organizing
-        a celebration, I enjoy bringing
-        energy, enthusiasm, and creativity
-        to everything I do.
-      </p>
+        <p>
+          These interests inspire my
+          creativity, teamwork, and
+          enthusiasm for connecting
+          with people.
+        </p>
+      </div>
 
     </section>
 
-    <!-- CALL TO ACTION -->
-
     <section class="closing">
-
-      <h2>Let's Work Together!</h2>
+      <h2>Let's Keep Connecting!</h2>
 
       <p>
-        Want to learn more about my
-        professional experience or
-        explore my creative projects?
+        Interested in learning more
+        about my professional experience
+        or creative work?
       </p>
 
       <a class="button" href="resume.html">
@@ -470,16 +490,24 @@
       <a class="button" href="projects.html">
         Explore My Projects
       </a>
-
     </section>
 
   </main>
 
   <footer>
+
+    <p>
+      Contact Me:
+      <a href="mailto:jori.d.moore@gmail.com">
+        jori.d.moore@gmail.com
+      </a>
+    </p>
+
     <p>
       &copy; 2026 Jori Moore |
       Professional Portfolio
     </p>
+
   </footer>
 
 </body>
