@@ -1,149 +1,222 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="Professional resume of Jori Moore,
+        communications and marketing professional.">
   <title>Resume | Jori Moore</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #fff9fb;
+      background: #fff9fb;
       color: #44333d;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     header {
-      background-color: #f8e5ee;
-      padding: 25px 20px;
+      background: #f8e5ee;
       text-align: center;
+      padding: 30px 20px;
     }
 
     header h1 {
-      margin: 0;
       color: #743f59;
+      margin: 0;
+      font-size: 32px;
     }
 
     header p {
       color: #80566b;
+      margin: 5px 0 0;
     }
 
     nav {
-      background-color: #743f59;
-      padding: 15px;
+      background: #743f59;
       text-align: center;
+      padding: 12px;
     }
 
     nav a {
+      display: inline-block;
       color: white;
       text-decoration: none;
       font-weight: bold;
-      margin: 0 15px;
-      display: inline-block;
-      padding: 5px;
+      padding: 8px 12px;
+      margin: 3px;
+      border-radius: 6px;
     }
 
     nav a:hover,
     nav a:focus-visible,
     nav a[aria-current="page"] {
+      background: #572c41;
       text-decoration: underline;
     }
 
+    a:focus-visible {
+      outline: 3px solid #bd638b;
+      outline-offset: 3px;
+    }
+
     main {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       padding: 40px 20px;
     }
 
+    h2, h3 { color: #743f59; }
+
     .intro {
-      background-color: #f9e5ef;
-      border-radius: 15px;
-      padding: 30px;
+      background: #f9e5ef;
       text-align: center;
+      padding: 40px 25px;
+      border-radius: 18px;
+      margin-bottom: 35px;
     }
 
-    h2 {
-      color: #743f59;
+    .intro h2 {
+      font-size: 30px;
+      margin: 0 0 12px;
     }
 
-    .resume-card {
-      background-color: #fcecf3;
-      border-radius: 12px;
-      padding: 25px;
-      margin: 20px 0 30px;
+    .intro p {
+      max-width: 700px;
+      margin: 0 auto 15px;
     }
 
-    .resume-card h3 {
-      color: #743f59;
-      margin-bottom: 5px;
-    }
-
-    .resume-card p {
-      margin-top: 5px;
-    }
-
-    .skills-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      list-style: none;
-      padding: 0;
-    }
-
-    .skills-list li {
-      background-color: #f8e5ee;
-      border-radius: 20px;
-      padding: 8px 15px;
-    }
-
-    .resume-download {
-      text-align: center;
-      background-color: #f9e5ef;
-      padding: 35px 20px;
-      border-radius: 15px;
-      margin-top: 40px;
-    }
-
-    .download-button {
+    .button {
       display: inline-block;
-      background-color: #743f59;
+      background: #743f59;
       color: white;
-      padding: 14px 28px;
+      padding: 12px 24px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      margin-top: 10px;
+      margin: 8px;
     }
 
-    .download-button:hover,
-    .download-button:focus-visible {
-      background-color: #572c41;
+    .button:hover,
+    .button:focus-visible {
+      background: #572c41;
+      color: white;
+    }
+
+    .section-title {
+      border-bottom: 3px solid #f4c8dc;
+      padding-bottom: 10px;
+      margin: 40px 0 22px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #efd3e0;
+      border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 18px
+        rgba(116, 63, 89, 0.07);
+    }
+
+    .card h3 {
+      margin: 0 0 5px;
+      font-size: 21px;
+    }
+
+    .job-title {
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .date {
+      color: #80566b;
+      font-size: 14px;
+      margin: 4px 0 15px;
+    }
+
+    .card ul {
+      padding-left: 22px;
+      margin-bottom: 0;
+    }
+
+    .card li { margin-bottom: 8px; }
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .education-grid .card {
+      margin-bottom: 0;
+    }
+
+    .skills {
+      background: #fff1f7;
+      padding: 25px;
+      border-radius: 16px;
+    }
+
+    .skill-tag {
+      display: inline-block;
+      background: #f8e5ee;
+      color: #743f59;
+      border: 1px solid #e6b8cf;
+      padding: 7px 13px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      margin: 5px 5px 5px 0;
+    }
+
+    .closing {
+      background: #f9e5ef;
+      border-radius: 18px;
+      padding: 35px 25px;
+      margin-top: 40px;
+      text-align: center;
     }
 
     footer {
-      background-color: #743f59;
+      background: #743f59;
       color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
     }
 
-    @media (max-width: 600px) {
-      nav a {
-        margin: 5px 8px;
+    @media (max-width: 700px) {
+      .education-grid {
+        grid-template-columns: 1fr;
       }
 
-      .intro {
-        padding: 25px 20px;
+      .intro h2 { font-size: 25px; }
+
+      .card { padding: 20px; }
+
+      main { padding: 25px 15px; }
+    }
+
+    @media print {
+      header, nav, .closing, footer,
+      .download-button {
+        display: none;
       }
+
+      body { background: white; }
+
+      .card {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+
+      main { max-width: none; }
     }
   </style>
 </head>
@@ -158,7 +231,8 @@
   <nav aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="resume.html" aria-current="page">Resume</a>
+    <a href="resume.html"
+       aria-current="page">Resume</a>
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
   </nav>
@@ -166,86 +240,83 @@
   <main>
 
     <section class="intro">
-      <h2>My Resume</h2>
-      <p>
-        Explore my professional experience,
-        education, and communication skills.
-      </p>
-    </section>
-
-    <section>
-      <h2>Professional Summary</h2>
+      <h2>My Professional Resume</h2>
 
       <p>
-        Communications and marketing professional
-        with experience in higher education
-        recruitment, digital marketing, social media,
-        content creation, event coordination,
+        Communications and higher education
+        recruitment professional experienced
+        in strategic outreach, student advising,
+        marketing, event coordination,
         and relationship building.
       </p>
 
-      <p>
-        Passionate about developing creative
-        marketing strategies, connecting with
-        audiences, and creating meaningful
-        experiences.
-      </p>
+      <a class="button download-button"
+         href="Jori_Moore_Public_Resume.pdf"
+         download>
+        Download My Resume (PDF)
+      </a>
     </section>
 
-    <section>
-      <h2>Professional Experience</h2>
+    <!-- EXPERIENCE -->
 
-      <div class="resume-card">
+    <section aria-labelledby="experience-title">
+
+      <h2 class="section-title" id="experience-title">
+        Professional Experience
+      </h2>
+
+      <article class="card">
         <h3>University of Northern Colorado</h3>
-        <p><strong>Recruiter &amp; Marketer</strong></p>
-        <p>March 2024 - Present</p>
+        <p class="job-title">
+          Admissions Coach — Recruitment & Marketing
+        </p>
+        <p class="date">
+          Greeley, CO | March 2024 – Present
+        </p>
 
         <ul>
           <li>
-            Recruit and guide prospective students
-            through the admissions and enrollment
-            process.
+            Advise prospective graduate students
+            on program selection, applications,
+            and career alignment.
           </li>
           <li>
-            Develop personalized marketing campaigns,
-            emails, and outreach strategies.
+            Develop outreach strategies through
+            recruitment events and targeted
+            communication campaigns.
           </li>
           <li>
-            Create engaging social media content
-            and promotional materials for
-            academic programs.
+            Conduct personalized one-on-one
+            enrollment appointments.
           </li>
           <li>
-            Coordinate recruitment events,
-            graduate fairs, and virtual
-            information sessions.
+            Collaborate with registration
+            and marketing teams.
           </li>
           <li>
-            Collaborate with faculty and staff
-            to increase program awareness
-            and student interest.
-          </li>
-          <li>
-            Support digital communications
-            and recruitment initiatives
-            for graduate programs.
+            Build prospective student relationships
+            through email, phone, and events.
           </li>
         </ul>
-      </div>
+      </article>
 
-      <div class="resume-card">
+      <article class="card">
         <h3>Regis University</h3>
-        <p><strong>Admissions Counselor</strong></p>
-        <p>May 2023 - March 2024</p>
+        <p class="job-title">
+          Admissions Counselor
+        </p>
+        <p class="date">
+          Denver, CO | May 2023 – March 2024
+        </p>
 
         <ul>
           <li>
-            Recruited and supported graduate students
-            in Business and Computing programs.
+            Recruited and supported graduate
+            students in Business and Computing.
           </li>
           <li>
-            Managed application processes and
-            supported file completion.
+            Managed application processes,
+            transfer evaluations, and file completion.
           </li>
           <li>
             Led call and email campaigns to
@@ -256,98 +327,190 @@
             to prospective students.
           </li>
         </ul>
-      </div>
+      </article>
 
-      <div class="resume-card">
-        <h3>Metropolitan State University of Denver</h3>
-        <p><strong>Admissions Call Center Specialist</strong></p>
-        <p>September 2019 - 2023</p>
+      <article class="card">
+        <h3>
+          Metropolitan State University of Denver
+        </h3>
+        <p class="job-title">
+          Admissions Call Center Specialist
+        </p>
+        <p class="date">
+          Denver, CO | September 2019 – 2023
+        </p>
 
         <ul>
           <li>
-            Assisted prospective and current students
-            through admissions communication.
+            Supported prospective and current
+            students through admissions communication.
           </li>
           <li>
-            Led a high-performing outreach campaign
-            to encourage applicant follow-through.
+            Led a high-volume outreach campaign
+            and increased applicant follow-through.
           </li>
           <li>
-            Coordinated outreach assignments and
-            reported performance metrics.
+            Supervised campaign team members
+            and coordinated outreach schedules.
           </li>
           <li>
-            Demonstrated leadership, organization,
-            and strong interpersonal communication.
+            Reported performance metrics
+            and was offered a leadership role.
           </li>
         </ul>
-      </div>
+      </article>
+
     </section>
 
-    <section>
-      <h2>Education</h2>
+    <!-- EDUCATION -->
 
-      <div class="resume-card">
-        <h3>Colorado State University</h3>
+    <section aria-labelledby="education-title">
+
+      <h2 class="section-title" id="education-title">
+        Education
+      </h2>
+
+      <div class="education-grid">
+
+        <article class="card">
+          <h3>Colorado State University</h3>
+          <p>
+            Master of Arts in Communication Studies
+          </p>
+          <p class="date">In Progress</p>
+          <p>
+            Continuing graduate education
+            in communication and related
+            professional skills.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>
+            Metropolitan State University of Denver
+          </h3>
+          <p>
+            Bachelor of Arts in Communication Studies
+          </p>
+          <p>
+            Concentration: Rhetoric and Social Justice
+          </p>
+          <p>Minor: Political Science</p>
+          <p class="date">Graduated May 2022</p>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- SKILLS -->
+
+    <section aria-labelledby="skills-title">
+
+      <h2 class="section-title" id="skills-title">
+        Professional Skills
+      </h2>
+
+      <div class="skills">
+        <span class="skill-tag">
+          Strategic Communication
+        </span>
+        <span class="skill-tag">
+          Marketing Strategy
+        </span>
+        <span class="skill-tag">
+          Student Recruitment
+        </span>
+        <span class="skill-tag">
+          Relationship Building
+        </span>
+        <span class="skill-tag">
+          Research & Writing
+        </span>
+        <span class="skill-tag">
+          Event Planning
+        </span>
+        <span class="skill-tag">
+          Campaign Coordination
+        </span>
+        <span class="skill-tag">
+          Sports Communication
+        </span>
+        <span class="skill-tag">
+          Student Advising
+        </span>
+        <span class="skill-tag">
+          Team Collaboration
+        </span>
+      </div>
+
+    </section>
+
+    <!-- CERTIFICATIONS AND HONORS -->
+
+    <section aria-labelledby="honors-title">
+
+      <h2 class="section-title" id="honors-title">
+        Certifications & Honors
+      </h2>
+
+      <div class="card">
+        <ul>
+          <li>
+            Certified Nursing Assistant (CNA)
+            credential earned through
+            Colorado Mesa University
+          </li>
+          <li>
+            Graduated Cum Laude from
+            Metropolitan State University of Denver
+          </li>
+          <li>
+            Invited to Lambda Pi Eta,
+            Communication Studies Honor Society
+          </li>
+          <li>
+            Invited to MSU Denver Honors Roll Society
+          </li>
+        </ul>
+
         <p>
-          Pursuing a Master of Arts
-          in Communication Studies
+          <em>
+            CNA credential was earned previously;
+            current license status is not stated.
+          </em>
         </p>
       </div>
 
-      <div class="resume-card">
-        <h3>Metropolitan State University of Denver</h3>
-        <p>
-          Bachelor of Arts in Communication Studies
-        </p>
-        <p>
-          Concentration: Rhetoric and Social Justice
-        </p>
-        <p>
-          Minor: Political Science
-        </p>
-        <p>Graduated Cum Laude</p>
-      </div>
     </section>
 
-    <section>
-      <h2>Professional Skills</h2>
+    <!-- CONTACT -->
 
-      <ul class="skills-list">
-        <li>Marketing Strategy</li>
-        <li>Social Media</li>
-        <li>Student Recruitment</li>
-        <li>Event Planning</li>
-        <li>Content Creation</li>
-        <li>Professional Writing</li>
-        <li>Relationship Building</li>
-        <li>Digital Communication</li>
-        <li>Marketing Campaigns</li>
-        <li>Audience Engagement</li>
-      </ul>
-    </section>
-
-    <section class="resume-download">
-      <h2>Download My Resume</h2>
+    <section class="closing">
+      <h2>Let's Connect!</h2>
 
       <p>
-        Interested in learning more about my
-        professional experience and qualifications?
-        Download a copy of my resume below!
+        Interested in learning more about
+        my professional background,
+        experience, or creative work?
       </p>
 
-      <a
-        class="download-button"
-        href="Jori_Moore_Public_Resume.pdf"
-        download>
-        Download My Resume (PDF)
+      <a class="button" href="projects.html">
+        Explore My Projects
+      </a>
+
+      <a class="button" href="contact.html">
+        Contact Me
       </a>
     </section>
 
   </main>
 
   <footer>
-    <p>&copy; 2026 Jori Moore | Professional Portfolio</p>
+    <p>
+      &copy; 2026 Jori Moore |
+      Professional Portfolio
+    </p>
   </footer>
 
 </body>
